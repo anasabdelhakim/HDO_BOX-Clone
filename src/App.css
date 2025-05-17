@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+html {
+  visibility: hidden;
+  scroll-behavior: smooth;
+}
+.hdo-app {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .hdo-app {
+    flex-direction: column;
+  }
+}
+
+html.darkmode,
+html:not(.darkmode) {
+  visibility: visible;
+}
+
+button {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: inset 0 0 0 30px var(--input-selection-background) !important;
+  -webkit-text-fill-color: var(--tags-color) !important;
+  border: none;
+}
+
+/* Root Variables */
+:root {
+  --light-color: rgb(156 163 175);
+  --primary-color: rgb(229 9 20);
+  --movie-list-color: rgb(18 18 18);
+  --movie-list-light: #181818;
+  --secoundry-color: rgb(40, 81, 216);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled SVG Icons</title>
+    <style>
+      /* Base style for all icons */
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: currentColor;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        fill: "none";
+        stroke: "currentColor";
+        stroke-width: "2";
+      }
+
+      /* Individual styles */
+      .icon-document {
+        color: #0ea5e9; /* sky-500 */
+      }
+
+      .icon-check {
+        color: #10b981; /* green-500 */
+      }
+
+      .icon-clipboard {
+        color: #f59e0b; /* amber-500 */
+      }
+
+      .icon-plus {
+        color: #6366f1; /* indigo-500 */
+      }
+
+      .icon-calendar {
+        color: #ef4444; /* red-500 */
+      }
+
+      .icon-clock {
+        color: #14b8a6; /* teal-500 */
+      }
+
+      .icon-file-text {
+        color: #8b5cf6; /* violet-500 */
+      }
+
+      .icon-alert {
+        color: #f97316; /* orange-500 */
+      }
+
+      /* Optional hover effect */
+      .icon:hover {
+        transform: scale(1.2);
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Document Icon -->
+      <svg class="icon icon-document" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
+      </svg>
+
+      <!-- Check Circle -->
+      <svg class="icon icon-check" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+
+      <!-- Clipboard -->
+      <svg class="icon icon-clipboard" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+        />
+      </svg>
+
+      <!-- Plus Circle -->
+      <svg class="icon icon-plus" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+        />
+      </svg>
+
+      <!-- Calendar -->
+      <svg class="icon icon-calendar" fill="none" viewBox="0 0 24 24">
+        <path d="M8 2v4" />
+        <path d="M16 2v4" />
+        <rect width="18" height="18" x="3" y="4" rx="2" />
+        <path d="M3 10h18" />
+      </svg>
+
+      <!-- Clock -->
+      <svg class="icon icon-clock" fill="none" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+
+      <!-- File Text -->
+      <svg class="icon icon-file-text" fill="none" viewBox="0 0 24 24">
+        <path d="M15 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7Z" />
+        <path d="M14 2v4a2 2 0 002 2h4" />
+        <path d="M10 9H8" />
+        <path d="M16 13H8" />
+        <path d="M16 17H8" />
+      </svg>
+
+      <!-- Alert Triangle -->
+      <svg class="icon icon-alert" fill="none" viewBox="0 0 24 24">
+        <path
+          d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+        />
+        <path d="M12 9v4" />
+        <path d="M12 17h.01" />
+      </svg>
+      <svg class="icon icon-file-text" viewBox="0 0 24 24" stroke-width="2">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+      <svg
+        class="icon icon-file-text"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+        <path d="m9 11 3 3L22 4"></path>
+      </svg>
+      <svg
+        class="icon icon-file-text"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M3 6h18"></path>
+        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+        <line x1="10" x2="10" y1="11" y2="17"></line>
+        <line x1="14" x2="14" y1="11" y2="17"></line>
+      </svg>
+    </div>
+  </body>
+</html>
