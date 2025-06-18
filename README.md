@@ -1,12 +1,94 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎬 HDO Box Clone – React Movie App
 
-Currently, two official plugins are available:
+A modern, mobile-first **Movie App** inspired by the HDO Box website. Built with **React**, the app offers smooth performance, categorized content, and a native-like user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- ⚡ **Fast data fetching** using `React Query`
+- 🧠 **Dynamic categories** (Trending, Top Rated, TV Shows, etc.)
+- 🌀 **Lazy loading** for optimal performance
+- 🧊 **Skeleton loaders** for enhanced loading experience
+- 📱 **Mobile-responsive** design with bottom navigation (app-like feel)
+- 🎨 **Modern UI** with beautiful icons and clean layout
+- 🚀 Powered by **TMDb API**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📱 Preview
+
+![App Screenshot](link-to-your-screenshot-or-demo.gif)
+
+> 🔗 [Live Demo]()
+
+## 📦 Tech Stack
+
+- **React**
+- **React Router**
+- **React Query**
+- **TMDb API**
+- **Swiper.js** (for carousels)
+- **Lucide Icons** / **Heroicons**
+- **Tailwind CSS**
+- **Vite** (fast dev environment)
+
+## 🚧 Folder Structure
+
+```
+
+src/
+│
+├── components/        # Reusable UI components
+├── pages/             # Home, Movies, TV Shows, Search, etc.
+├── api/               # TMDb API functions
+├── context/           # Global state (e.g. selected media)
+├── App.jsx            # Main component with routes
+├── main.jsx           # App entry point
+└── ...
+
+````
+
+## 🚀 Getting Started
+
+1. **Clone the repo:**
+
+```bash
+git clone https://github.com/anasabdelhakim/HDO_BOX-Clone.git
+cd HDO_BOX-Clone
+````
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Add your TMDb API key:**
+
+Create a `.env` file and add:
+
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. **Start the dev server:**
+
+```bash
+npm run dev
+```
+
+## ✅ Upcoming Features
+
+* ✏️ Add to favorites/watchlist
+* 🔍 Advanced search filters
+* 📺 Watch trailers in-app
+* 🔐 Authentication (optional)
+
+## 🙌 Credits
+
+* UI Inspired by [HDO Box](https://hdobox.tv/)
+* Data from [TMDb API](https://www.themoviedb.org/documentation/api)
+
+## 📄 License
+
+This project is for educational and personal use only.
+
+
