@@ -61,13 +61,6 @@ cd HDO_BOX-Clone
 npm install
 ```
 
-3. **Add your TMDb API key:**
-
-Create a `.env` file and add:
-
-```env
-VITE_TMDB_API_KEY=your_api_key_here
-```
 
 4. **Start the dev server:**
 
