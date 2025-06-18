@@ -1,5 +1,6 @@
 
 # 🎬 HDO Box Clone – React Movie App
+![Alt text for image](Desktop-hdo.png)
 
 A modern, mobile-first **Movie App** inspired by the HDO Box website. Built with **React**, the app offers smooth performance, categorized content, and a native-like user experience.
 
