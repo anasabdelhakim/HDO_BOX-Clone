@@ -27,7 +27,7 @@ function NavList() {
     <ul className={styles.navbar}>
       <li>
         <NavLink
-          to="/Movie_testing"
+          to="/"
           className={({ isActive }) =>
             isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
           }

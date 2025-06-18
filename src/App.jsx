@@ -13,7 +13,7 @@ const Settings = lazy(() => import("./pages/Settings"));
 function App() {
   return (
     <div className="hdo-app">
-      <BrowserRouter basename="/Movie_test">
+      <BrowserRouter>
         <HdoNav />
         <Suspense fallback={<Loader />}>
           <Routes>
