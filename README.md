@@ -17,7 +17,7 @@ A modern, mobile-first **Movie App** inspired by the HDO Box website. Built with
 
 ![App Screenshot](link-to-your-screenshot-or-demo.gif)
 
-> 🔗 [Live Demo]()
+> 🔗 [Live Demo](https://hdo-box-clone.vercel.app/)
 
 ## 📦 Tech Stack
 
